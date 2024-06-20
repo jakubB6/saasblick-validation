@@ -41,7 +41,6 @@ export async function POST(req: NextRequest) {
   const eoApiKey = process.env.EO_API_KEY;
   const listId = process.env.LIST_ID;
 
-  console.log(eoApiKey, listId);
   if (!eoApiKey || !listId) {
     return NextResponse.json(
       { error: "Missing required environment variables" },

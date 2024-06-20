@@ -27,7 +27,7 @@ const HeroSection = (): JSX.Element => {
         </h3>
         <p className="text-lg text-muted-foreground max-w-prose text-center">
           SaaSBlick is here to simplify your workflow, keep your website running
-          smoothly, and ensure your users' voices are heard.
+          smoothly, and ensure your users&apos; voices are heard.
         </p>
         <div className="w-full flex items-center justify-center">
           <ScrollToButton

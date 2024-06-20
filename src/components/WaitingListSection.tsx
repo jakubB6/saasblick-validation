@@ -9,7 +9,7 @@ const WaitingListSection = (): JSX.Element => {
   const [email, setEmail] = useState<string>("");
   const [isSucess, setIsSuccess] = useState<boolean | undefined>(undefined);
 
-  const handleJoin = async (email: string) => {
+  const HandleJoin = async (email: string) => {
     const response = await useFetch(email);
 
     if (response) {
@@ -42,8 +42,8 @@ const WaitingListSection = (): JSX.Element => {
           Join Our Newsletter
         </h3>
         <p className="text-lg text-muted-foreground max-w-prose text-center px-6 lg:px-12 mx-auto">
-          Get notified when we launch. We'll let you know when we're ready to go
-          live.
+          Get notified when we launch. We&apos;ll let you know when we&apos;re
+          ready to go live.
         </p>
         <Input
           type="email"
@@ -52,7 +52,7 @@ const WaitingListSection = (): JSX.Element => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <Button className="w-full lg:w-1/2" onClick={() => handleJoin(email)}>
+        <Button className="w-full lg:w-1/2" onClick={() => HandleJoin(email)}>
           Join the waiting list
         </Button>
       </div>
